@@ -1,0 +1,31 @@
+class Rectangle:
+
+   def __init__(self,__l,__b):
+       self.l = __l
+       self.b = __b
+   
+   def calcArea(ob):
+        c = ob.l * ob.b
+        return c
+       
+       
+
+l1 = int(input("Enter the length 1 : "))
+b1 = int(input("Enter the width1 : "))
+l2 = int(input("Enter the length 2 : "))
+b2 = int(input("Enter the width2 : "))
+ 
+rec1 = Rectangle(l1,b1)
+rec2 = Rectangle(l2,b2)
+
+print("The area of Rectangle1 : ",rec1.calcArea())
+print("The area of Rectangle2 : ",rec2.calcArea())
+
+if(rec1.calcArea() < rec2.calcArea()):
+    print("Area of Rectangle 2 is greater")
+elif(rec1.calcArea() == rec2.calcArea()):
+    print("Both are equal")
+else:
+    print("Area of Rectangle 1 is greater")
+
+
